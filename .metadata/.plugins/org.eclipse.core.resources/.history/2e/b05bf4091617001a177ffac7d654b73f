@@ -1,0 +1,15 @@
+package jp.co.acroquest.training.JavaExercises;
+import java.util.HashMap;
+public class Ex5 
+{
+	public static void main(String[] args)
+	{
+		HashMap<String, String> engToJapDict = new HashMap<String, String>();
+
+	    engToJapDict.put("England", "London");
+	    engToJapDict.put("Germany", "Berlin");
+	    engToJapDict.put("Norway", "Oslo");
+	    engToJapDict.put("USA", "Washington DC");
+	    System.out.println(engToJapDict);
+	}
+}

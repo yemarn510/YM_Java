@@ -1,0 +1,16 @@
+
+public class Ex2 
+{
+	public static void main(String args[])
+	{
+		int sum =0;
+		for(int rollingNumber=0 ; rollingNumber < 1000 ; rollingNumber++)
+		{
+			if(rollingNumber%2 != 0 && rollingNumber%3 !=0 && rollingNumber%5 !=0 && rollingNumber%7 !=0)
+			{
+				sum = sum + rollingNumber;
+			}
+		}
+		System.out.println("Anser is : "+ sum);
+	}
+}

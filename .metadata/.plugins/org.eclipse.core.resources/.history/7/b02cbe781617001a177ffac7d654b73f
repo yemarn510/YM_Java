@@ -1,0 +1,16 @@
+package jp.co.acroquest.training.JavaExercises;
+import java.util.HashMap;
+public class Ex5 
+{
+	public static void main(String[] args)
+	{
+		HashMap<String, String> engToJapDict = new HashMap<String, String>();
+
+	    engToJapDict.put("hello", "kon-nichiwa");
+	    engToJapDict.put("name", "namae");
+	    engToJapDict.put("book", "hin");
+	    engToJapDict.put("chair", "isu");
+	    engToJapDict.put("dog", "inu");
+	    System.out.println(engToJapDict);
+	}
+}

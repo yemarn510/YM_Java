@@ -1,0 +1,8 @@
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		double k = 0.0001D;
+		System.out.println(k);
+	}
+}

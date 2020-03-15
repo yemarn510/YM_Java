@@ -1,0 +1,23 @@
+
+public class Ex3 
+{
+	public static void main(String[] args)
+	{	int k;
+		if (args.length > 0) 
+		{
+		    try{
+		    	for(int index = 0; index <= args.length -1 ; index++)
+		    	{
+		    		k = Integer.parseInt(args[index]);
+			    	System.out.println("length " + args.length);
+			    	System.out.println("asdas"+ k);
+		    	}	
+		    		
+		    }
+		    catch(NumberFormatException e){
+		    	System.err.println("Argument" + args[0] + " must be an integer.");
+		        System.exit(1);
+		    }
+		}
+	}
+}

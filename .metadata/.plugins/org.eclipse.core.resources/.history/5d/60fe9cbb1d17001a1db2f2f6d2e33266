@@ -1,0 +1,65 @@
+package jp.co.acroquest.training.JavaExercises;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ex4 
+{
+	public static void main(String[] args) 
+	{	
+		
+		boolean isPrimeNumber= true;
+		List<Integer> primeNumberList = new ArrayList<>();
+		for(int index =2; index<=10000; index++)
+		{
+			for(int idx =2 ; idx <= index; idx++)
+			{
+				if(idx !=index && index%idx ==0)
+				{
+					isPrimeNumber = false;
+					break;
+				}
+			}
+			if(isPrimeNumber)
+			{
+				primeNumberList.add(index);
+			}
+			isPrimeNumber = true;	
+		}
+		
+		// got the arrayList
+		ArrayList<Integer> ansArrayList = new ArrayList<Integer>();
+		if(args.length>0)
+		{
+			try 
+			{
+				int num = Integer.parseInt(args[0]);
+				System.out.print(num + " = ");
+				for(int arrIndex =0; arrIndex < primeNumberList.size() ; arrIndex++)
+				{	
+					while(num % primeNumberList.get(arrIndex) == 0)
+					{
+//						System.out.println("Okay " + primeNumberList.get(arrIndex) + "  num : " + num);
+						num = num / primeNumberList.get(arrIndex);
+						ansArrayList.add(primeNumberList.get(arrIndex));
+						System.out.print(primeNumberList.get(arrIndex));
+						if(num == 1)
+						{
+						}
+						else
+						{
+							System.out.print(" * ");
+						}
+					}
+					
+				}System.out.println();
+			}
+			catch(Exception e)
+			{
+				System.out.println("nopenope");
+			}
+		}
+		
+	}
+	
+}

@@ -1,0 +1,32 @@
+package jp.co.acroquest.training.JavaExercises;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Ex5 
+{
+	public static void main(String[] args) 
+	{
+		HashMap<String, String> engToJapDict = new HashMap<String, String>();
+		engToJapDict.put("hello", "kon-nichiwa");
+		engToJapDict.put("name", "namae");
+		engToJapDict.put("book", "hin");
+		engToJapDict.put("chair", "isu");
+		engToJapDict.put("dog", "inu");
+
+		Scanner scan = new Scanner(System.in);
+		String input, output;
+		System.out.print("Input English Word : ");
+		input = scan.nextLine();
+		output = engToJapDict.get(input);
+		if (output != null && !output.isEmpty()) 
+		{
+			System.out.println("Japanese Word is   : " + output);
+		}  
+		else 
+		{
+			System.out.println("The word \" " + input + "\" is not in the dictionary");
+		}
+		scan.close();
+	}
+}

@@ -1,0 +1,24 @@
+
+public class Ex3 
+{
+	public static void main(String[] args)
+	{	int rollingNumber;
+		int max = 0, min = 0;
+		if (args.length > 0) 
+		{
+		    try{
+		    	for(int index = 0; index <= args.length -1 ; index++)
+		    	{
+		    		rollingNumber = Integer.parseInt(args[index]);
+		    		
+		    	}	
+		    		
+		    }
+		    catch(NumberFormatException e)
+		    {
+		    	System..println("Argument" + args[0] + " must be an integer.");
+		        System.exit(1);
+		    }
+		}
+	}
+}

@@ -1,0 +1,35 @@
+
+public class Ex3 
+{
+	public static void main(String[] args)
+	{	int rollingNumber;
+		int max = 0, min = 0;
+		if (args.length > 0) 
+		{
+		    try
+		    {
+		    	min = Integer.parseInt(args[0]);
+		    	for(int index = 0; index <= args.length -1 ; index++)
+		    	{
+		    		rollingNumber = Integer.parseInt(args[index]);
+		    		if (rollingNumber > max)
+		    		{
+		    			max = rollingNumber;
+		    		}
+		    		else if ( rollingNumber < min)
+		    		{
+		    			min = rollingNumber;
+		    		}
+		    	}
+		    	System.out.println("Min Number : " + min);	
+		    	System.out.println("Max Number : " + max);
+		    }
+		    
+		    catch(NumberFormatException e)
+		    {
+		    	System.out.println("Argument" + args[0] + " must be an integer.");
+		        System.exit(1);
+		    }
+		}
+	}
+}

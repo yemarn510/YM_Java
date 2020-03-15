@@ -1,0 +1,19 @@
+package jp.co.acroquest.training.JavaExercises;
+/*
+ * This is the main class for summing up the odd numbers
+ * starting from 1 to 99.
+ * arguments : 
+ * return :
+ */
+public class Ex1
+{
+	public static void main(String[] args)
+	{
+		int sum =0;
+		for(int index =1; index <100 ; index+=2)
+		{
+			sum = sum + index;
+		}	
+		System.out.println(sum);
+	}
+}

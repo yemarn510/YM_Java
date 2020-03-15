@@ -1,0 +1,16 @@
+
+public class Ex3 
+{
+	public static void main(String[] args)
+	{
+		if (args.length > 0) 
+		{
+		    try{
+		    	k = Integer.parseInt(arg[0]);
+		    }
+		    catch(NumberFormatException e){
+		    	
+		    }
+		}
+	}
+}

@@ -1,0 +1,9 @@
+
+public class Ex1 {
+	
+	private int k = 100;
+	public static void main(String[] args) {
+//		double k = 0.0001d;
+		System.out.println(k);
+	}
+}
